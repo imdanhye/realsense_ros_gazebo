@@ -222,14 +222,14 @@
         <depthUpdateRate>${rate}</depthUpdateRate>
         <colorUpdateRate>${rate}</colorUpdateRate>
         <infraredUpdateRate>${rate}</infraredUpdateRate>
-        <depthTopicName>depth/image_raw</depthTopicName>
-        <depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
-        <colorTopicName>color/image_raw</colorTopicName>
-        <colorCameraInfoTopicName>color/camera_info</colorCameraInfoTopicName>
-        <infrared1TopicName>infra1/image_raw</infrared1TopicName>
-        <infrared1CameraInfoTopicName>infra1/camera_info</infrared1CameraInfoTopicName>
-        <infrared2TopicName>infra2/image_raw</infrared2TopicName>
-        <infrared2CameraInfoTopicName>infra2/camera_info</infrared2CameraInfoTopicName>
+        <depthTopicName>${sensor_name}/depth/image_raw</depthTopicName>
+        <depthCameraInfoTopicName>${sensor_name}/depth/camera_info</depthCameraInfoTopicName>
+        <colorTopicName>${sensor_name}/color/image_raw</colorTopicName>
+        <colorCameraInfoTopicName>${sensor_name}/color/camera_info</colorCameraInfoTopicName>
+        <infrared1TopicName>${sensor_name}/infra1/image_raw</infrared1TopicName>
+        <infrared1CameraInfoTopicName>${sensor_name}/infra1/camera_info</infrared1CameraInfoTopicName>
+        <infrared2TopicName>${sensor_name}/infra2/image_raw</infrared2TopicName>
+        <infrared2CameraInfoTopicName>${sensor_name}/infra2/camera_info</infrared2CameraInfoTopicName>
         <colorOpticalframeName>${sensor_name}_color_optical_frame</colorOpticalframeName>
         <depthOpticalframeName>${sensor_name}_depth_optical_frame</depthOpticalframeName>
         <infrared1OpticalframeName>${sensor_name}_infrared1_optical_frame</infrared1OpticalframeName>
@@ -237,7 +237,7 @@
         <rangeMinDepth>0.2</rangeMinDepth>
         <rangeMaxDepth>10.0</rangeMaxDepth>
         <pointCloud>false</pointCloud>
-        <pointCloudTopicName>depth/color/points</pointCloudTopicName>
+        <pointCloudTopicName>${sensor_name}/depth/color/points</pointCloudTopicName>
         <pointCloudCutoff>0.25</pointCloudCutoff>
         <pointCloudCutoffMax>9.0</pointCloudCutoffMax>
       </plugin>
@@ -424,14 +424,14 @@
           <depthUpdateRate>${rate}</depthUpdateRate>
           <colorUpdateRate>${rate}</colorUpdateRate>
           <infraredUpdateRate>${rate}</infraredUpdateRate>
-          <depthTopicName>depth/image_raw</depthTopicName>
-          <depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
-          <colorTopicName>color/image_raw</colorTopicName>
-          <colorCameraInfoTopicName>color/camera_info</colorCameraInfoTopicName>
-          <infrared1TopicName>infra1/image_raw</infrared1TopicName>
-          <infrared1CameraInfoTopicName>infra1/camera_info</infrared1CameraInfoTopicName>
-          <infrared2TopicName>infra2/image_raw</infrared2TopicName>
-          <infrared2CameraInfoTopicName>infra2/camera_info</infrared2CameraInfoTopicName>
+          <depthTopicName>${sensor_name}/depth/image_raw</depthTopicName>
+          <depthCameraInfoTopicName>${sensor_name}/depth/camera_info</depthCameraInfoTopicName>
+          <colorTopicName>${sensor_name}/color/image_raw</colorTopicName>
+          <colorCameraInfoTopicName>${sensor_name}/color/camera_info</colorCameraInfoTopicName>
+          <infrared1TopicName>${sensor_name}/infra1/image_raw</infrared1TopicName>
+          <infrared1CameraInfoTopicName>${sensor_name}/infra1/camera_info</infrared1CameraInfoTopicName>
+          <infrared2TopicName>${sensor_name}/infra2/image_raw</infrared2TopicName>
+          <infrared2CameraInfoTopicName>${sensor_name}/infra2/camera_info</infrared2CameraInfoTopicName>
           <colorOpticalframeName>${sensor_name}_color_optical_frame</colorOpticalframeName>
           <depthOpticalframeName>${sensor_name}_depth_optical_frame</depthOpticalframeName>
           <infrared1OpticalframeName>${sensor_name}_infrared1_optical_frame</infrared1OpticalframeName>
@@ -439,7 +439,7 @@
           <rangeMinDepth>0.2</rangeMinDepth>
           <rangeMaxDepth>10.0</rangeMaxDepth>
           <pointCloud>false</pointCloud>
-          <pointCloudTopicName>depth/color/points</pointCloudTopicName>
+          <pointCloudTopicName>${sensor_name}/depth/color/points</pointCloudTopicName>
           <pointCloudCutoff>0.25</pointCloudCutoff>
           <pointCloudCutoffMax>9.0</pointCloudCutoffMax>
         </plugin>

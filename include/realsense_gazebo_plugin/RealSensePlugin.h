@@ -134,6 +134,8 @@ protected:
 
   float rangeMinDepth_;
   float rangeMaxDepth_;
+
+  std::string robotNamespace_;
 };
 }
 #endif

@@ -117,7 +117,7 @@ void RealSensePlugin::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf) {
     else if (name == "prefix")
       this->prefix = _sdf->GetValue()->GetAsString();
     else if (name == "robotNamespace")
-      break;
+      robotNamespace_ = _sdf->GetValue()->GetAsString();
     else
       throw std::runtime_error("Ivalid parameter for RealSensePlugin");
 

@@ -32,7 +32,7 @@ void GazeboRosRealsense::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf) {
 
   RealSensePlugin::Load(_model, _sdf);
 
-  this->rosnode_ = new ros::NodeHandle(this->GetHandle());
+  this->rosnode_ = new ros::NodeHandle(robotNamespace_);
 
   // initialize camera_info_manager
   this->camera_info_manager_.reset(
